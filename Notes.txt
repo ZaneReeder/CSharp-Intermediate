@@ -1,0 +1,66 @@
+C# Intermediate
+
+/*****************
+Section 2
+******************/
+
+Always initialize Lists to empty Lists of the given type 
+in the constructor of the Class.
+
+: this() constructors to iterate through constructors
+
+Method overloading using Parameter Modification.
+
+Method modification using Out Modification.
+
+/**************
+Section 3
+***************/
+
+Class Coupling
+
+	Tightly Coupled
+		Modifications to the greatest ancestor class
+			ripples throughout the entire subsystem
+			classes and could break things along the way.
+			
+	Loosely Coupled
+		Minimize changes in classes so that changes are 
+			isolated.
+		Encapsulation
+		Relationship between classes
+		Interfaces
+		
+	Class Relationships
+		Inheritnace and Composition
+		Favor Composition over Inheritance
+		
+	Inheritance
+		Relationship between two classes such that
+			one class inherits code from the other.
+		Code ReUse
+		Polymorphic Behavior
+		
+	Composition
+		Relationship in which one class contains another.
+		Flexibility
+		Code ReUse
+
+	Problems with Inheritance
+		Easily Abused by amateur designers/devs
+		Large hierarchies
+		Fragility
+		Tightly Coupled
+	
+	Using Composition
+		Person*-> Animal, Walkable
+		Dog*-> Animal, Walkable
+		Goldfish*-> Animal, Swimmable
+		Duck*-> Animal, Flyable
+		
+	Composition allows Class swap with Interface
+	
+/**************
+Section 4
+***************/
+	
