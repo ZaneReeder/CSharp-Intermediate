@@ -63,4 +63,92 @@ Class Coupling
 /**************
 Section 4
 ***************/
+
+Black Box Class Design
+
+Access Modifier
+	public
+	private
+	protected
+		accessible only from class and derived classes.
+		considered bad design
+		revealing implementation to subclasses
+	internal
+		class modifier.
+		accessible only from the same assembly
+	protected internal
+		accessible only from same assembly or derived classes.
+	
+	
+	Constructor Inheritance
+		Base Class constructors are always executed first
+		Base Class constructors are not inherited
+		Class extensions do not include private fields
+		
+Upcasting & Downcasting
+	(Car) Obj -> Obj as Car
+	if (obj is Car)
+		Car car = (Car) obj;
+
+	
+Boxing Unboxing
+	Types
+		Value
+			Stored on Stack
+		Reference
+			Stored in Heap
+			Classes
+	
+	Boxing is converting the value 
+		type instance to an object reference.
+		int number = 10;
+		object obj = number;
+		
+	Unboxing converting the object reference to a value type
+	
+	Performance Penalty
+	
+Method Overriding
+	Modifying the implementation of an inherited method
+	virtual - override
+
+Abstract Classes
+	Abstract Modifiers
+		Indicates a class or member is missing implementation.
+
+Sealed Classes
+	Sealed Modifier
+		Prevents derivation of classes or overriding of methods.
+	Very unusual and rare
+	
+/************
+Section 6
+*************/
+
+Interfaces
+
+Syntax
+	public interface ITaxCalculator
+	{
+		int Calculate(); //Declaration with no modifiers
+	}
+
+Build Loosely coupled applications
+Using Interface to isolate classes for unit testing
+
+Always reduce the impact of change
+
+Open Close Principle
+	Open for Extension but closed for modification
+
+	
+/************
+Section 7
+*************/
+
+Encapsulate the implementation details of a class.
+All properties that keep the state of the class should be private.
+Know when properties are not neccessary and fields are sufficient.
+Ensure a class is always in a valid state.
+	
 	
